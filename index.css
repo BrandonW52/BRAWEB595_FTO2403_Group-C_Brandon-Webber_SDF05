@@ -1,0 +1,35 @@
+:root {
+  --background-color: #016f32;
+  --accent-color: goldenrod;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+    sans-serif;
+  background-color: var(--background-color);
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+#gameState {
+  font-style: italic;
+}
+
+button {
+  color: var(--background-color);
+  width: 150px;
+  background: var(--accent-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
