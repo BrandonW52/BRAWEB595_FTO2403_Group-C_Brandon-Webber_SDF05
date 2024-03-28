@@ -33,6 +33,9 @@ function getRandomCard() {
 // Initialization of game
 function startGame() {
   isBust = false;
+  // Resets BlackJack on new game
+  hasBlackJack = false;
+  //-------------------------------P.S. Thanks Connor
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
   cards = [firstCard, secondCard];
@@ -60,7 +63,7 @@ function renderGame() {
   gameState.textContent = message;
 }
 
-// Checks if bust && allows you to get another
+// Allows you to get another && checks if bust
 function newCard() {
   if (isBust === false && hasBlackJack === false) {
     let card = getRandomCard();
